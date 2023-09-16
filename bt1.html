@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label>Nhập a:</label>
+        <input type="text" id="a">
+    <label>Nhập b:</label>
+        <input type="text" id="b">
+    <button onclick="tong()">Kiểm tra</button>
+        <p id="result"></p>
+
+
+<script>
+    function tong() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let c = a + b ;
+        c = (a + b) < 4 ? "Below" : "Over";
+        document.getElementById("result").innerHTML = c;
+
+
+    }
+</script>
+
+
+</body>
+</html>
